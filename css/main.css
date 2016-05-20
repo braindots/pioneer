@@ -104,6 +104,7 @@ a:focus {
   font-size: 36px;
   margin-top: 0;
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .media>.pull-left{
@@ -239,6 +240,8 @@ ul.social-share li a:hover i{
   margin-left: -30px;
   font-size: 18px;
   margin-top: 8px;
+  display: inline-block;
+  cursor: pointer;
 }
 
 input.search-form{
@@ -253,6 +256,7 @@ input.search-form{
   -ms-transition: all 400ms;
   -o-transition: all 400ms;
   transition: all 400ms;
+  
 }
 
 input.search-form::-webkit-input-placeholder{
@@ -263,7 +267,7 @@ input.search-form:hover::-webkit-input-placeholder {
   color: #fff;
 }
 
-input.search-form:hover {
+input.search-form.expand {
   width: 180px;
 }
 
@@ -285,7 +289,7 @@ input.search-form:hover {
  }
 
 .navbar-nav>li{
-  margin-left: 35px;
+  margin-left: 28px;
   padding-bottom: 28px;
 }
 
@@ -296,6 +300,9 @@ input.search-form:hover {
   color: #c00000;
   line-height: 24px;
   display: inline-block;
+ /* font-family: arial, sans-serif;
+ */ font-weight: 600;
+  text-transform: uppercase;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover{
@@ -544,7 +551,7 @@ input.search-form:hover {
 }
 
 #feature {
-  background: #f2f2f2;
+  background: #fcfcfc;
   padding-bottom: 40px;
 }
 
@@ -663,8 +670,9 @@ input.search-form:hover {
 }
 
 #services {
-  background: #000 url(../images/services/bg_services.png);
-  background-size: cover;
+/*  background: #000 url(../images/services/bg_services.png);
+  background-size: cover;*/
+  background: #F26D6D;
 }
 
 #services .lead,
@@ -1514,7 +1522,6 @@ ul.social_icons li  a i{
 }
 
 .clients-comments h3 {
-  margin-top: 55px;
   font-weight: 300;
   padding: 0 40px;
 }
@@ -1901,11 +1908,11 @@ ul.social_icons li  a i{
 **************************/
 
 .gmap-area {
-  background-image: url("../images/map.jpg");
+/*  background-image: url("../images/map.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 70px 0;
+  padding: 70px 0;*/
 }
 
 .gmap-area .gmap iframe {
@@ -2477,14 +2484,10 @@ shortcodes page css
 
 #footer {
   padding-top: 30px;
-  padding-bottom: 30px;
   color: #333;
   background: #f2f2f2;
 }
 
-#footer a {
-  color: #333;
-}
 
 #footer a:hover {
   color: #333;
@@ -2545,7 +2548,7 @@ shortcodes page css
 }
 
 .bg-light-gray {
-    background-color: #f7f7f7;
+    background-color: #fcfcfc;
 }
 section h2.section-heading {
     font-size: 36px;
@@ -2559,4 +2562,24 @@ section h2.section-heading {
 
 ul {list-style-type: none}
 
+#footer h5 {
+  text-transform: uppercase;
+  font-size: 18px;
 
+}
+#footer .info li {
+  float: none;
+  display: block;
+  margin-left: 0;
+}
+
+.sub-footer {
+  background: #666;
+  margin-top: 30px;
+}
+.sub-footer a {
+  color: #fff;
+}
+#footer .info li a{
+  color: #333;
+}
