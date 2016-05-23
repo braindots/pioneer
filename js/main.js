@@ -51,4 +51,12 @@ jQuery(function($) {'use strict',
 		//alert();
 		$(this).parents().find('.search-form').toggleClass('expand');
 	});
+	
+
+	 $('.navbar .dropdown > a').click(function(){
+            location.href = this.href;
+      });
+
+	
+
 });
