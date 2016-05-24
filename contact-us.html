@@ -27,7 +27,7 @@
 
 <body>
 
-    <header id="header">
+    <header>
         <nav class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -44,8 +44,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-                         <li class="dropdown">
-                            <a href="services.html" class="dropdown-toggle" data-toggle="dropdown">Services <i class="fa fa-angle-down"></i></a>
+                         <li class="submenu">
+                            <a href="services.html">Services </a><i class="fa fa-angle-down"></i>
                             <ul class="dropdown-menu">
                                 <li><a href="services-detail.html">Company Registration</a></li>
                                 <li><a href="#">Immigration</a></li>
@@ -79,6 +79,25 @@
         <div class="gmap-area">
             <div class="container">
                 <div class="row">
+                    
+
+                    <div class="col-sm-6 map-content">
+                        <ul>
+                            
+                            <li>
+                                <address>
+                                    <h5>Pioneer Corporate</h5>
+                                    <p>
+                                    Blk 624, Bedok Reservoir Road<br>
+                                    #02-1556, Singapore 470624</p>
+                                </address>
+                                
+                            </li>
+                        </ul>
+                        <div class="gmap">
+                            <img src="images/gmap.png" alt="">
+                        </div>
+                    </div>
                     <div class="col-sm-6">
                         <div class="contact-wrap"> 
                 <div class="status alert alert-success" style="display: none"></div>
@@ -107,47 +126,6 @@
                 </form> 
             </div><!--/.row-->
                     </div>
-
-                    <div class="col-sm-6 map-content">
-                        <ul class="row">
-                            <li class="col-sm-6">
-                                <address>
-                                    <h5>Head Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-
-                                <address>
-                                    <h5>Zonal Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>                                
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-                            </li>
-
-
-                            <li class="col-sm-6">
-                                <address>
-                                    <h5>Zone#2 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-
-                                <address>
-                                    <h5>Zone#3 Office</h5>
-                                    <p>1537 Flint Street <br>
-                                    Tumon, MP 96911</p>
-                                    <p>Phone:670-898-2847 <br>
-                                    Email Address:info@domain.com</p>
-                                </address>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
@@ -172,18 +150,18 @@
     </section><!--/#conatcat-info-->
 
   
-   <footer id="footer" class="midnight-blue">
+    <footer id="footer" class="midnight-blue">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <h5>PIONEER</h5>
-                    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna</P>
+                    <p class="faq">Have a question or need a <br>custom quote?</p>
                     
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <h5>CONTACT US</h5>
                  <address>
-                    <strong>Pioneer Corporate</strong><br>
+                    Pioneer Corporate<br>
                     Blk 624, Bedok Reservoir Road<br>
                     #02-1556, Singapore 470624<br>
                 </address>
@@ -193,9 +171,7 @@
                         <h5>FOLLOW US</h5>
                             <ul class="social-share">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                                 <li><a href="#"><i class="fa fa-skype"></i></a></li>
                             </ul>
                             
@@ -207,8 +183,7 @@
         <div class="sub-footer">
             <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="text-center">
+            <div class="col-sm-12 col-md-8 col-lg-8">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
@@ -216,6 +191,9 @@
                         <li><a href="tools.html">Tools</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
+                    
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-4">
                     <p class="copyright"> &copy; 2016 <a target="_blank" href="#">Pioneer Corporate</a>. All Rights Reserved.</p>
                 </div>
             </div>

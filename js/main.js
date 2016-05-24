@@ -53,10 +53,12 @@ jQuery(function($) {'use strict',
 	});
 	
 
-	 $('.navbar .dropdown > a').click(function(){
+	 $('.navbar .submenu > a').click(function(){
             location.href = this.href;
       });
 
-	
+	$('.navbar li.submenu i').click(function (){
+		$(this).parents().find('.dropdown-menu').slideToggle();
+	});
 
 });
