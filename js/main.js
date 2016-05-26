@@ -60,5 +60,39 @@ jQuery(function($) {'use strict',
 	$('.navbar li.submenu i').click(function (){
 		$(this).parents().find('.dropdown-menu').slideToggle();
 	});
+	$("div.bhoechie-tab-menu>div.list-group>a").click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.bhoechie-tab>div.bhoechie-tab-content").removeClass("active");
+        $("div.bhoechie-tab>div.bhoechie-tab-content").eq(index).addClass("active");
+    });
+	
+	$('.features, .service-item').each(function(){  
+            
+            var highestBox = 0;
+            $('.feature-wrap, .services-wrap', this).each(function(){
+            
+                if($(this).height() > highestBox) 
+                   highestBox = $(this).height(); 
+            });  
+            
+            $('.feature-wrap, .services-wrap', this).height(highestBox);
+      });
+	// $('.list-group>a').on('click', function(e) {
+	// 	e.preventDefault();
+	// 	if ($(window).width() < 768 ) {
+	// 	$('.list-group').toggle(200);
+	// 	}	
+	// $('.list-group>a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
 
+	// var $target = $(this.hash), target = this.hash;
+	// var targetOffset = $target.offset().top;
+	// 	 $("html, body")
+	//       .animate({
+	//         scrollTop: targetOffset-59
+	//       }, 700);
+	 
+	// });
 });
