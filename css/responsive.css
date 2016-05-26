@@ -50,11 +50,13 @@
   .feature-wrap h2, 
   .single-services h2 {
     font-size: 18px;
+
   }
 
   .feature-wrap h3, 
   .single-services h3{
     font-size: 14px;
+    margin-top: 10px;
   }
 
   .tab-wrap .media .parrent.pull-left{
@@ -221,10 +223,23 @@
   margin-left: 0;
   padding-bottom: 0;
   margin-bottom: 10px;
+  position: relative;
+}
+.navbar li i{
+      position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 26px;
 }
 .navbar-inverse .navbar-nav li a {
   display: block;
   border-radius: 0;
+}
+.navbar-inverse .navbar-nav .dropdown-menu{
+  width: 100%;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li, .navbar-inverse .navbar-nav .dropdown-menu a {
+  margin-bottom: 0;
 }
 input.search-form.expand, input.search-form{
   width: 280px;
@@ -372,12 +387,17 @@ input.search-form.expand, input.search-form{
     padding-left: 20px;
   }
     
-
+div.bhoechie-tab-menu div.list-group>a.active:after{
+  display: none;
+}
 }
 
 /* XS Portrait */
-@media (max-width: 480px) {
-
+@media (max-width: 1024px) and (min-width: 769px) {
+.navbar-brand img {
+  width: 200px;
+}
 
 }
+
 
