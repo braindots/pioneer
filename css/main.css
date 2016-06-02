@@ -2725,7 +2725,7 @@ header {
     right:4px;
 }
 /*  bhoechie tab */
-div.bhoechie-tab-container{
+/*div.bhoechie-tab-container{
   z-index: 10;
   background-color: #ffffff;
   padding: 0 !important;
@@ -2784,8 +2784,7 @@ div.bhoechie-tab-menu div.list-group>a.active:after{
 
 div.bhoechie-tab-content{
   background-color: #ffffff;
-  /* border: 1px solid #eeeeee; */
-  padding-left: 20px;
+  /* border: 1px solid #eeeeee;   padding-left: 20px;
   padding-top: 10px;
 }
 
@@ -2794,4 +2793,67 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 }
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus{
   border-color:#666;
+}*/
+
+
+.tab-header:before, .tab-header:after {
+display: table;
+content: "";
+}
+
+.tab-header:after {
+clear: both;
+}
+
+ .tab-header a {
+margin: 0 5px;
+padding: 8px 12px;
+color: #333;
+position: relative;
+}
+
+.tab-header a.active, .tab-header a:hover {
+  background: #C00000;
+    color: #fff;
+}
+
+.tab-header a.active:before, .tab-header a.active:after{
+    bottom: -20px;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+.tab-header a.active:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-width: 12px;
+    margin-left: -12px;
+}
+
+.tab-header a.active:after{
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #C00000;
+    border-width: 10px;
+    margin-left: -10px;
+
+}
+
+.tab-header .tabs {
+  display: inline;
+}
+
+.tab-header .tabs li {
+    float: left;
+    margin:10px 10px 0 0;
+}
+.tab-inner {
+  margin-top: 30px;
+  padding:10px 20px;
+  border:1px solid #ddd;
+}
+.tab-inner h3 {
+  font-size: 20px;
 }
