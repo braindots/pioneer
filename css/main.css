@@ -879,7 +879,7 @@ a.accordion-toggle  i{
   color: #fff;
 }
 
-.nav-tabs>li{
+/*.nav-tabs>li{
   margin-bottom: 0px;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -932,7 +932,7 @@ a.accordion-toggle  i{
   right: -44px;
   top:0;
 }
-
+*/
 .tab-wrap{
   border:1px solid #e6e6e6;
   margin-bottom: 20px;
